@@ -5,11 +5,6 @@
         </h2>
     </x-slot>
 
-    @if(session('my_status'))
-        <script>
-            alert('{{ session('my_status') }}');
-        </script>
-    @endif
     @if(session('error'))
         <script>
             alert('{{ session('error') }}');
