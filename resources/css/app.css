@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-block{
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    gap: 0rem 3rem;
+}
+.button{
+    width: 100%;
+    border-radius: 1rem;
+    background-color: rgb(50, 126, 240);
+}
+.show{
+    background-color: white;
+    min-height: 100vh;
+}
+.current-time{
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    font-size: 5rem;
+}
+.shift-form{
+    width: 50vw;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+    background-color: white;
+}
+.form-main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem 0rem;
+}
+.input-line{
+    display: flex;
+    align-items: center;
+    gap: 0rem 2rem;
+}
+.shift-button{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(155, 227, 245);
+}
