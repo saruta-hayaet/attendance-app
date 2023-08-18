@@ -32,6 +32,7 @@ Route::post('/shifts_input/store', [App\Http\Controllers\ShiftsController::class
 Route::get('/shifts_input/show', [App\Http\Controllers\ShiftsController::class, 'show'])->name('shifts_input.show');
 Route::post('/shifts_input/{id}', [App\Http\Controllers\ShiftsController::class, 'destroy'])->name('shifts_input.delete');
 Route::get('/employee', [App\Http\Controllers\EmployeeController::class, 'index'])->name('employee');
+Route::get('/employee/{id}', [App\Http\Controllers\EmployeeController::class, 'show'])->name('employee.show');
 
 
 Route::middleware('auth')->group(function () {
