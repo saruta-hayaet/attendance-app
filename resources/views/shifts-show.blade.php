@@ -38,6 +38,12 @@
                                     未完了
                                 @endif
                             </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200 red-400" style="color:#dc3545">
+                                <form action="{{ route('shifts_input.delete', ['id'=>$shift->id]) }}" method="POST">
+                                    @csrf
+                                    <button type="submit" class="btn btn-danger">削除</button>
+                                </form>
+                            </td>
                           </tr>
                         @endforeach
                     </tbody>

@@ -30,6 +30,7 @@ Route::get('/time_records/show', [App\Http\Controllers\TimeRecordsController::cl
 Route::get('/shifts_input', [App\Http\Controllers\ShiftsController::class, 'create'])->name('shifts_input');
 Route::post('/shifts_input/store', [App\Http\Controllers\ShiftsController::class, 'store'])->name('shifts_input.store');
 Route::get('/shifts_input/show', [App\Http\Controllers\ShiftsController::class, 'show'])->name('shifts_input.show');
+Route::post('/shifts_input/{id}', [App\Http\Controllers\ShiftsController::class, 'destroy'])->name('shifts_input.delete');
 Route::get('/employee', [App\Http\Controllers\EmployeeController::class, 'index'])->name('employee');
 
 

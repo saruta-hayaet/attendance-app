@@ -62,4 +62,13 @@ class ShiftsController extends Controller
 
         return view('shifts-show', compact('shifts','attendanceDaysCount','totalHours','remainderMinutes'));
     }
+
+    public function destroy(string $id)
+    {
+        $shift = Shift::find($id);
+
+        $shift->delete();
+
+        return redirect()->route('shifts_input.show');
+    }
 }
